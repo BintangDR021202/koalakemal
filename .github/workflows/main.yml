@@ -16,8 +16,8 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
       - name: Build and push
-          uses: docker/build-push-action@v5
-          with:
+        uses: docker/build-push-action@v5
+        with:
           context: .
           push: true
           tags: ghcr.io/bintangdr021202/koalakemal:latest
